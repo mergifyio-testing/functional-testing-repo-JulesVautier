@@ -1,0 +1,10 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: dependabot was here
+  conditions:
+  - dependabot-dependency-name=bootstrap
+  - dependabot-update-type=version-update:semver-minor
+  - dependabot-version-before-update=5.1.3
+  - dependabot-version-after-update=5.2.0
+  name: Merge if dependabot properties are checked
