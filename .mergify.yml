@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: dependabot was here
+  conditions:
+  - dependabot-dependency-name=bootstrap
+  name: Merge if dependabot properties are checked
