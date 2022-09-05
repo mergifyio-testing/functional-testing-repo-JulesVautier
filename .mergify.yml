@@ -1,0 +1,17 @@
+commands_restrictions:
+  copy:
+    conditions:
+    - sender=toto
+extends: .github
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base=20220905130502/test_extend_config_file_merge_duplicated_rule/main
+  - -merged
+  name: automatic merge
+queue_rules:
+- allow_inplace_checks: false
+  conditions:
+  - 'schedule: MON-FRI 08:00-17:00'
+  name: hotfix
