@@ -1,0 +1,6 @@
+extends: .github
+pull_request_rules:
+- actions:
+    dismiss_reviews: {}
+  conditions: []
+  name: dismiss reviews
