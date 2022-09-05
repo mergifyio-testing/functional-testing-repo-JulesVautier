@@ -1,0 +1,8 @@
+extends: .github
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base=20220905082707/test_extend_config_file_merge_ok/main
+  - -merged
+  name: merge on main
