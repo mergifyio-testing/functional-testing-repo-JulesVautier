@@ -1,0 +1,16 @@
+commands_restrictions:
+  copy:
+    conditions:
+    - sender=toto
+extends: .github
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base=override_permission
+  name: automatic merge
+queue_rules:
+- allow_inplace_checks: false
+  conditions:
+  - 'schedule: MON-FRI 06:06-06:06'
+  name: hotfix
