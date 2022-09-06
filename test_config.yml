@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    merge: {}
+  conditions:
+  - base=20220906160020/test_extend_config_file_name_ok/main
+  - -merged
+  name: new_test_file
