@@ -25,3 +25,4 @@ jobs:
            EMAIL_MAPPING: |
              sileht@mergify.com sileht
              jd@mergify.com jd
+             jules.vautier@mergify.com JulesVautier
