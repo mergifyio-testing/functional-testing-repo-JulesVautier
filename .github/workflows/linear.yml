@@ -17,7 +17,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Add reviewers
-        uses: Mergifyio/add-linear-author-as-reviewer@main
+        uses: JulesVautier/add-linear-author-as-reviewer@test
         with:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
            LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
