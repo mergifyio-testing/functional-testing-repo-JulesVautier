@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: no way
+  conditions:
+  - base=20220919144148/test_review_decision/main
+  - merged
+  - '#approved-reviews-by=0'
+  name: no manual merge
