@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: no way
+  conditions:
+  - branch-protection-review-decision=true
+  name: no manual merge
